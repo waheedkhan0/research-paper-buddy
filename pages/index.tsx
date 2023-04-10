@@ -18,7 +18,7 @@ export default function Home() {
   const [showSettings, setShowSettings] = useState<boolean>(false);
   const [mode, setMode] = useState<"search" | "chat">("chat");
   const [matchCount, setMatchCount] = useState<number>(5);
-  const [apiKey, setApiKey] = useState<string>("");
+  const [apiKey, setApiKey] = useState<string>("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");
 
   const handleSearch = async () => {
     if (!apiKey) {
@@ -199,10 +199,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Paul Graham GPT</title>
+        <title>Research Buddy</title>
         <meta
           name="description"
-          content={`AI-powered search and chat for Paul Graham's essays.`}
+          content={`AI-powered search and chat for Provided Research Papers.`}
         />
         <meta
           name="viewport"
@@ -401,7 +401,7 @@ export default function Home() {
                 ))}
               </div>
             ) : (
-              <div className="mt-6 text-center text-lg">{`AI-powered search & chat for Paul Graham's essays.`}</div>
+              <div className="mt-6 text-center text-lg">{`AI-powered search & chat for provided research papers.`}</div>
             )}
           </div>
         </div>

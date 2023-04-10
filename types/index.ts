@@ -5,6 +5,7 @@ export enum OpenAIModel {
 export type PGEssay = {
   title: string;
   url: string;
+  file_id: string;
   date: string;
   thanks: string;
   content: string;
@@ -15,6 +16,7 @@ export type PGEssay = {
 
 export type PGChunk = {
   essay_title: string;
+  file_id: string;
   essay_url: string;
   essay_date: string;
   essay_thanks: string;

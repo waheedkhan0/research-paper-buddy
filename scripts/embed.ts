@@ -17,7 +17,6 @@ const generateEmbeddings = async (essays: PGEssay[]) => {
 
     for (let j = 0; j < section.chunks.length; j++) {
       const chunk = section.chunks[j];
-
       const { essay_title, essay_url, essay_date, essay_thanks, content, content_length, content_tokens } = chunk;
 
       const embeddingResponse = await openai.createEmbedding({

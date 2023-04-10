@@ -7,7 +7,7 @@ export const Footer: FC = () => {
       <div className="hidden sm:flex"></div>
 
       <div className="hidden sm:flex italic text-sm">
-        Created by
+        Adapted by Waheed Khan from
         <a
           className="hover:opacity-50 mx-1"
           href="https://twitter.com/mckaywrigley"
@@ -15,15 +15,6 @@ export const Footer: FC = () => {
           rel="noreferrer"
         >
           Mckay Wrigley
-        </a>
-        based on the essays of
-        <a
-          className="hover:opacity-50 ml-1"
-          href="https://twitter.com/paulg"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Paul Graham
         </a>
         .
       </div>
