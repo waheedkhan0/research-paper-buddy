@@ -11,9 +11,7 @@ const handler = async (req: Request): Promise<Response> => {
       apiKey: string;
       matches: number;
     };
-
     const input = query.replace(/\n/g, " ");
-
     const res = await fetch("https://api.openai.com/v1/embeddings", {
       headers: {
         "Content-Type": "application/json",
