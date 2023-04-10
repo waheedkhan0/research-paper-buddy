@@ -3,7 +3,6 @@ import axios from "axios";
 import * as cheerio from "cheerio";
 import fs from "fs";
 import { encode } from "gpt-3-encoder";
-import pdfjsLib from 'pdfjs-dist';
 import { createClient } from "@supabase/supabase-js";
 import * as pdfjsLib from 'pdfjs-dist'
 
